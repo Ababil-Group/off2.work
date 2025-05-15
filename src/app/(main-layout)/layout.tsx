@@ -4,7 +4,7 @@ import { Navbar } from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 
 export const metadata: Metadata = {
-  title: "TH Consulting",
+  title: "OFF2WORK RECUITMENT",
   description: "",
   icons: {
     icon: "/images/faviicon.png",

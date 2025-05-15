@@ -3,32 +3,32 @@ import Image from "next/image";
 const steps = [
   {
     id: 1,
-    title: "Recruitment of workers",
+    title: "Talent Recruitment",
     description:
-      "We recruit workers and start the process of bringing them to Croatia only when we are sure we have found the right candidate.",
-    image: "/images/1-Large.jpeg", // Replace with actual image path
+      "We select candidates and only start the process of bringing them to Croatia when we are sure that we have found a suitable worker.",
+    image: "/images/1-Large.jpeg",
   },
   {
     id: 2,
-    title: "Work permits",
+    title: "Work Permits",
     description:
-      "The process of bringing workers to Croatia takes 90 days. We cannot influence some things because they are according to the Law on foreigners by HZZ, MUP and MVP.",
-    image: "/images/2-Large.jpeg", // Replace with actual image path
+      "The process of bringing workers to your location typically takes around 90 days. While we handle the logistics, certain steps are managed by government authorities in compliance with local laws.",
+    image: "/images/2-Large.jpeg",
   },
   {
     id: 3,
-    title: "Hiring and adaptation",
+    title: "Employment and adaptation",
     description:
-      "Our job does not end with the arrival of workers and the signing of a work contract, we remain with you the entire time as intermediaries between you and the worker.",
-    image: "/images/3-Large.jpeg", // Replace with actual image path
+      "Our support doesn’t stop at hiring. We remain by your side throughout the entire process, acting as a bridge between you and your new employees to ensure a smooth transition and adaptation.",
+    image: "/images/3-Large.jpeg",
   },
 ];
 
 export default function HiringProcess() {
   return (
     <section className="max-w-[1250px] mx-auto py-16 px-6 md:px-20 text-center">
-      <h2 className="text-3xl font-bold text-[#023a51] mb-12 max-w-[400px] mx-auto">
-        We guide the hiring process through every step.
+      <h2 className="text-3xl font-bold text-[#3E4247] mb-12 max-w-[600px] mx-auto">
+        We Guide You Through Every Step of the Hiring Process
       </h2>
 
       <div className=" grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -49,9 +49,9 @@ export default function HiringProcess() {
                 className="w-full h-auto rounded-md"
               />
             </div>
-            <div className="border border-red-400 mt-4"></div>
+            <div className="border border-gray-400 mt-4"></div>
 
-            <p className="text-gray-600 mt-2 text-justify">
+            <p className="text-gray-900 font-medium mt-2 text-base text-justify">
               {step.description}
             </p>
           </div>

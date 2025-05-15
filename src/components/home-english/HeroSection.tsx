@@ -45,17 +45,18 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-[#023a51]/60 z-20"></div>
 
       {/* Content */}
-      <div className="relative z-30 text-start  text-white px-4 max-w-[400px] mx-auto">
+      <div className="relative z-30 text-start  text-white px-4 max-w-[700px] mx-auto">
         <h1 className="text-4xl md:text-6xl font-bold">
-          Agency for hiring foreign workers
+          Connecting Businesses with Exceptional Global Talent
         </h1>
         <p className="mt-4 text-lg">
-          A reliable and secure solution for your business, entrusted to our
-          professionals.
+          Simplify your hiring process with Off2 Work. From sourcing top talent
+          to handling work permits and immigration, we provide reliable,
+          end-to-end workforce solutions tailored to your needs.
         </p>
 
-        <button className="mt-6 px-6 py-3 bg-[#023a51] hover:bg-red-400 text-white rounded-lg">
-          Start a conversation
+        <button className="mt-6 px-6 py-3 bg-[#023a51] hover:bg-[#642D91]/60 hover:shadow-xl uppercase font-semibold cursor-pointer text-white rounded-lg">
+          Start Your Journey with Us
         </button>
       </div>
     </section>

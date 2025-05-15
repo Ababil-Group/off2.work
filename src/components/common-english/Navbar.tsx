@@ -26,30 +26,49 @@ const navItems: NavItem[] = [
     title: "Services",
     href: "/services",
     children: [
-      { title: "Service 1", href: "/en/services/1" },
-      { title: "Service 2", href: "/en/services/2" },
-      { title: "Service 3", href: "/en/services/3" },
+      {
+        title: "Hire Talent-Trained Workers",
+        href: "/en/services/hire-talent-trained-workers",
+      },
+      {
+        title: "Work Permit Assistance",
+        href: "/en/services/hire-talent-trained-workers",
+      },
+      {
+        title: "Your Trusted Workforce Partner",
+        href: "/en/services/hire-talent-trained-workers",
+      },
     ],
   },
-  { title: "Industries", href: "/en/industries" },
-  { title: "Reference", href: "/en/reference" },
+  { title: "Areas of work", href: "/en/industries" },
+  { title: "Client Success Stories", href: "/en/reference" },
   { title: "About Us", href: "/en/about-us" },
 ];
+
+function useIsScrolled() {
+  const [isScrolled, setIsScrolled] = React.useState(false);
+
+  React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      const handleScroll = () => {
+        setIsScrolled(window.scrollY > 10);
+      };
+      handleScroll();
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }
+  }, []);
+
+  return isScrolled;
+}
 
 export function Navbar() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = React.useState(false);
-  const [isScrolled, setIsScrolled] = React.useState(false);
+  const isScrolled = useIsScrolled();
 
-  React.useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      setIsScrolled(scrollPosition > 10);
-    };
+  console.log("pathname", pathname);
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
   return (
     <>
       {/* Top Navbar */}
@@ -57,7 +76,12 @@ export function Navbar() {
         <div className="max-w-[1250px] mx-auto px-2">
           <div className="flex flex-col lg:flex-row lg:items-center">
             <div className="flex items-center justify-between pr-8 py-4 lg:py-0">
-              <Image src="/images/logo.png" alt="" width={200} height={200} />
+              <Image
+                src="/images/off2worklogo.png"
+                alt=""
+                width={160}
+                height={200}
+              />
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="lg:hidden text-[#0f2a47] hover:text-gray-600"
@@ -76,7 +100,7 @@ export function Navbar() {
               <div
                 className={cn(
                   "transition-all duration-300 ease-in-out",
-                  isScrolled ? "h-0 overflow-hidden opacity-0" : "opacity-100"
+                  isScrolled ? "h-0 overflow-hidden opacity-0 " : "opacity-100"
                 )}
               >
                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between pl-4 lg:pl-0 lg:space-x-6">
@@ -85,13 +109,13 @@ export function Navbar() {
                       href="/offices"
                       className="text-sm text-[#0f2a47] hover:underline"
                     >
-                      Offices
+                      Explore Our Locations
                     </Link>
                     <Link
                       href="/faq"
                       className="text-sm text-[#0f2a47] hover:underline"
                     >
-                      FAQ
+                      FAQs
                     </Link>
                   </div>
 
@@ -101,13 +125,13 @@ export function Navbar() {
                       className="flex items-center text-[#0f2a47] hover:underline"
                     >
                       <Phone className="mr-1 h-4 w-4" />
-                      Call Us
+                      Call Us Today
                     </Link>
                     <Link
                       href="mailto:info@thconsulting.hr"
                       className="flex items-center text-[#0f2a47] hover:underline"
                     >
-                      <Mail className="mr-1 h-4 w-4" /> Contact Us
+                      <Mail className="mr-1 h-4 w-4" /> Get In Touch
                     </Link>
                     <div className="flex items-center space-x-6">
                       <Link
@@ -151,13 +175,13 @@ export function Navbar() {
                 <nav className="bg-white">
                   <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mt-2 px-4 space-y-2 lg:space-y-0">
                     {navItems.map((item) => (
-                      <div key={item.title} className="relative group">
+                      <div key={item.title} className="relative group ">
                         {item.children ? (
                           <DropdownMenu>
                             <DropdownMenuTrigger asChild>
                               <div
                                 className={cn(
-                                  "flex items-center rounded-none gap-1 text-lg py-2 lg:py-3 text-[#0f2a47] hover:bg-gray-50 hover:border-y-2 hover:border-[#0f2a47]",
+                                  "flex items-center rounded-none gap-1 text-lg py-2 lg:py-3 cursor-pointer text-[#0f2a47] hover:bg-gray-50 border-y-2 border-transparent hover:border-[#0f2a47]",
                                   pathname === item.href &&
                                     "border-y-2 border-[#0f2a47]"
                                 )}
@@ -178,7 +202,7 @@ export function Navbar() {
                           <Link
                             href={item.href}
                             className={cn(
-                              "block py-2 lg:py-3 px-4 text-[#0f2a47] text-lg hover:bg-gray-50 hover:border-y-2 hover:border-[#0f2a47]",
+                              "block py-2 lg:py-3 px-4 text-[#0f2a47] text-lg hover:bg-gray-50 border-y-2 border-transparent hover:border-[#0f2a47]",
                               pathname === item.href &&
                                 "border-y-2 border-[#0f2a47]"
                             )}

@@ -30,27 +30,30 @@ export default function ContactPageEnglish() {
         <div className="text-start max-w-[500px] h-[400px] mt-8">
           <p className="text-4xl  text-[#023a51] my-4">Contact us</p>
           <p className="text-5xl  text-[#023a51] font-bold my-4">
-            Let&apos;s start our cooperation.
+            Let&apos;s Get to Know Each Other
           </p>
           <p className="text-xl  text-foreground-muted">
-            Contact our team of experts and send an inquiry for your business
-            without a binding offer
+            Reach out to our team of experts for a no-obligation consultation
+            tailored to your business needs.
           </p>
         </div>
       </div>
 
-      <div className="bg-white rounded-xl py-20 px-12  max-w-[700px] mx-auto shadow-lg">
+      <div className="bg-white rounded-xl py-20 px-12 space-y-3 max-w-[700px] mx-auto shadow-lg">
+        <span className="text-2xl font-bold text-center">Get in Touch</span>
         <form className="space-y-6">
+
           <div className="grid md:grid-cols-2 gap-4">
+
             <div className="space-y-4">
               <Label htmlFor="fullName" className="text-grey-500">
-                Name and surname *
+                Name and Surname *
               </Label>
-              <Input id="fullName" placeholder="Ime Prezime*" required />
+              <Input id="fullName" placeholder="Name and Surname *" required />
             </div>
             <div className="space-y-6">
               <Label htmlFor="mobile" className="text-grey-500">
-                Mobile number *
+                Mobile Phone Number *
               </Label>
               <Input
                 id="mobile"
@@ -75,14 +78,14 @@ export default function ContactPageEnglish() {
             </div>
             <div className="space-y-6">
               <Label htmlFor="company" className="text-grey-500">
-                Naziv firme *
+                Company Name *
               </Label>
-              <Input id="company" placeholder="primjer d.o.o.*" required />
+              <Input id="company" placeholder="Company Name *" required />
             </div>
           </div>
 
           <div className="space-y-6">
-            <Label className="text-grey-500">Broj potrebnih radnika?*</Label>
+            <Label className="text-grey-500">Number of Workers Needed? *</Label>
             <div className="flex  items-center">
               <span className="text-muted-foreground inline-block border  px-4 py-2 border-gray-300 rounded mr-2">
                 {workerCount}
@@ -98,7 +101,7 @@ export default function ContactPageEnglish() {
 
           <div className="space-y-6">
             <Label htmlFor="message" className="text-grey-500">
-              How can we help you?
+              Send an inquiry
             </Label>
             <Textarea id="message" placeholder="I need help with..." rows={6} />
           </div>

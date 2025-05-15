@@ -9,8 +9,8 @@ export default function ImageShowcase() {
           <Image
             src="/images/Velika-stavka-pexels-tima-miroshnichenko-6508835-400x267.jpeg"
             alt="Cleaning grid"
-            layout="fill"
-            objectFit="cover"
+            fill
+            style={{ objectFit: "cover" }}
           />
         </div>
 
@@ -19,8 +19,8 @@ export default function ImageShowcase() {
           <Image
             src="/images/Velika-stavka-pexels-ketut-subiyanto.jpeg"
             alt="Person with coffee"
-            layout="fill"
-            objectFit="cover"
+            fill
+            style={{ objectFit: "cover" }}
           />
         </div>
 
@@ -29,8 +29,8 @@ export default function ImageShowcase() {
           <Image
             src="/images/Velika-stavka-pexels-tima-miroshnichenko.jpeg"
             alt="Painting ceiling"
-            layout="fill"
-            objectFit="cover"
+            fill
+            style={{ objectFit: "cover" }}
           />
         </div>
       </div>

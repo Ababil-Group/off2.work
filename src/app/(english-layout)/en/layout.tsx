@@ -3,7 +3,7 @@ import { Navbar } from "@/components/common-english/Navbar";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "TH Consulting",
+  title: "OFF2WORK RECUITMENT",
   description: "",
   icons: {
     icon: "/images/faviicon.png",

@@ -7,9 +7,9 @@ import React from "react";
 
 export default function IndustriesEnglishPage() {
   const services = [
-    "Workers in agriculture and animal husbandry",
-    "Drivers of almost all categories",
-    "Support staff",
+    "Skilled workers in agriculture and livestock farming.",
+    "Drivers for various categories.",
+    "Support staff to assist with daily operations.",
   ];
   const services2 = [
     "Sawmill workers",
@@ -17,14 +17,14 @@ export default function IndustriesEnglishPage() {
     "Warehouse workers and forklift operators",
   ];
   const services3 = [
-    "Reinforcement workers, facade workers, bricklayers, roofers, waterproofers, painters, ceramicists, carpenters",
-    "Forklift operators and warehouse workers",
-    "Construction machine operators and drivers of almost all categories",
+    "Reinforcement workers, masons, roofers, waterproofers, and painters.",
+    "Forklift drivers and warehouse staff.",
+    "Construction machinery operators and drivers of all categories.",
   ];
   const services4 = [
     "Welders, locksmiths, metalworkers",
-    "Forklift operators and drivers",
-    "Construction machine operators",
+    "Maids and cleaning staff.",
+    "Caregivers and support personnel.",
   ];
   const services5 = [
     "Chefs, baristas, and waiters",
@@ -32,9 +32,9 @@ export default function IndustriesEnglishPage() {
     "Caregivers, support staff",
   ];
   const services6 = [
-    "Workers in processing, manufacturing, and the food industry",
-    "Workers in the textile industry",
-    "Forklift operators, warehouse workers, delivery workers",
+    "Workers in food processing and manufacturing.",
+    "Textile industry specialists.",
+    "Forklift operators, warehouse staff, and delivery personnel.",
   ];
 
   return (
@@ -49,13 +49,13 @@ export default function IndustriesEnglishPage() {
         className="h-[400px] w-full flex items-center justify-center"
       >
         <div className="text-start max-w-[500px] h-[400px] mt-8">
-          <p className="text-2xl text-[#023a51] my-4">Work Areas</p>
+          <p className="text-2xl text-[#023a51] my-4">Industries We Serve</p>
           <p className="text-5xl text-[#023a51] font-bold my-4">
-            We find the ideal workforce for your industry.
+            We specialize in finding the ideal staff for your business.
           </p>
           <p className="text-xl text-foreground-muted">
-            Entrust us with the task of searching, selecting, and recruiting
-            workers qualified to work in your industry.
+            Trust us to search, select, and recruit qualified workers tailored
+            to your industry’s needs.
           </p>
         </div>
       </div>
@@ -65,9 +65,9 @@ export default function IndustriesEnglishPage() {
             Agriculture.
           </h2>
           <p className="text-gray-600 mb-6">
-            For work in agriculture, crop production, and livestock farming, we
-            provide reliable and motivated foreign workers to farms and
-            businesses.
+            We provide reliable and motivated foreign workers for agriculture,
+            crop farming, and livestock farming, supporting both family farms
+            and business owners.
           </p>
 
           <div className="space-y-4">
@@ -111,9 +111,8 @@ export default function IndustriesEnglishPage() {
             Wood industry.
           </h2>
           <p className="text-gray-600 mb-6">
-            With our help and the help of our foreign partners, many processing
-            and production plants of the wood industry have found reliable
-            workers qualified for the tasks entrusted to them.
+            Through our network of trusted partners, we supply qualified workers
+            for wood processing and manufacturing plants.
           </p>
 
           <div className="space-y-4">
@@ -135,8 +134,7 @@ export default function IndustriesEnglishPage() {
             Construction and industry.
           </h2>
           <p className="text-gray-600 mb-6">
-            We primarily provide qualified workers for jobs in construction and
-            industry through our reliable partners from Uzbekistan.
+            We provide skilled workers for construction and industrial projects, sourced from reliable partners in countries like Uzbekistan.
           </p>
 
           <div className="space-y-4">
@@ -180,8 +178,7 @@ export default function IndustriesEnglishPage() {
             Shipbuilding.
           </h2>
           <p className="text-gray-600 mb-6">
-            We find welders and motivated shipbuilding workers qualified for the
-            tasks entrusted to them.
+            We recruit experienced welders and motivated workers for the shipbuilding industry.
           </p>
 
           <div className="space-y-4">
@@ -199,10 +196,9 @@ export default function IndustriesEnglishPage() {
       </div>
       <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row bg-white gap-4 mt-30 -mb-10">
         <div className="w-full md:w-1/2 p-8 bg-white flex flex-col justify-center rounded-2xl overflow-hidden shadow">
-          <h2 className="text-3xl font-bold text-[#003459] mb-4">Tourism</h2>
+          <h2 className="text-3xl font-bold text-[#003459] mb-4">Tourism and Hospitality</h2>
           <p className="text-gray-600 mb-6">
-            We are recruiting qualified workers for any position in tourism and
-            catering.
+            We supply qualified workers for all positions in tourism and catering.
           </p>
 
           <div className="space-y-4">

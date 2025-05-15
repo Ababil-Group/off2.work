@@ -12,11 +12,16 @@ const ContactInfo = () => {
           </div>
           <h3 className="text-lg font-semibold text-gray-800 mb-3">Office</h3>
           <div className="text-gray-600 text-sm space-y-1">
-            <p>Stjepana Radica 38, Virovitica</p>
-            <p>Hrvatska</p>
-            <p className="mt-2">The Meydan Hotel, Grandstand,</p>
-            <p>6th floor, Meydan Road, Nad Al Sheba</p>
-            <p>Dubai, U.A.E</p>
+            <p className="font-bold">Romania Office:</p>
+            <p>
+              Municipiul Ploiesti, Strada MIHAI BRAVU, Nr. 239, Bloc C4, Ap.71,
+              Judet Prahova, Romania
+            </p>
+            <p className="mt-2 font-bold">Dubai Office:</p>
+            <p>
+              The Meydan Hotel, Grandstand, 6th Floor, Meydan Road, Nad Al
+              Sheba, Dubai, UAE
+            </p>
           </div>
         </div>
 
@@ -27,8 +32,8 @@ const ContactInfo = () => {
           </div>
           <h3 className="text-lg font-semibold text-gray-800 mb-3">Contact</h3>
           <div className="text-gray-600 text-sm space-y-1">
-            <p>info@thconsulting.hr</p>
-            <p>033 621 441</p>
+            <p>info@off2.work</p>
+            <p>+123-234-1234</p>
           </div>
         </div>
 
@@ -41,8 +46,8 @@ const ContactInfo = () => {
             Working Hours
           </h3>
           <div className="text-gray-600 text-sm space-y-1">
-            <p>Monday - Friday</p>
-            <p>8.00 - 16.00</p>
+            <p>Monday – Friday</p>
+            <p>8:00 AM – 4:00 PM</p>
           </div>
         </div>
       </div>

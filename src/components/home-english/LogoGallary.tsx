@@ -19,21 +19,12 @@ const logos = [
   { src: "/images/logos/naturala.png", alt: "Naturala" },
   { src: "/images/logos/opgcajkulic.jpg", alt: "Dan" },
   { src: "/images/logos/pik-vrbovec.png", alt: "Pik Vrbovec" },
-  //   { src: "/images/logos/prehrana.png", alt: "Prehrana" },
 ];
 
 export default function LogoGallery() {
   return (
     <section className="max-w-[1250px] mx-auto px-1 py-8 lg:py-16">
-      {/* <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-          Naši pouzdani partneri
-        </h2>
-        <p className="text-muted-foreground max-w-2xl mx-auto">
-          Zajedno gradimo povjerenje i uspjeh. Vodećim tvrtkama pomažemo u
-          pronalaženju najboljeg kadra.
-        </p>
-      </div> */}
+     
 
       <motion.div
         initial="hidden"

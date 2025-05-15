@@ -10,26 +10,34 @@ const FAQSection = () => {
 
   const faqData = [
     {
-      question: "What are the agency's obligations for hiring foreign workers?",
+      question:
+        "What are the obligations of an agency for the employment of foreign workers?",
       answer: (
         <ul className="list-disc pl-5">
-          <li>Searching for an appropriate worker based on client criteria</li>
           <li>
-            Creating and submitting documentation for residence and work permit
+            Finding suitable workers based on your criteria, conducting
+            selection procedures, and preparing necessary documentation.
           </li>
-          <li>Covering travel insurance costs</li>
-          <li>Traveling costs for the worker</li>
+          <li>
+            Submitting all required documents to obtain temporary residence and
+            work permits for foreign workers.
+          </li>
+          <li>Covering travel insurance costs for workers.</li>
+          <li>Assisting with visa applications for residence and work.</li>
+          <li>
+            Arranging and covering the cost of flight tickets for workers.
+          </li>
         </ul>
       ),
     },
     {
-      question: "What are my obligations when hiring a foreign worker?",
+      question: "What are my obligations as an employer?",
       answer: (
         <p>
-          After the work permit is issued, you need to ensure accommodation and
-          food for the worker. Accommodation must meet minimum standards, and if
-          food is not provided, you must pay the food allowance. You must also
-          register the worker for social security and health insurance.
+          Provide accommodation and meals for workers upon their arrival.
+          Accommodation must meet minimum living standards, and if meals are not
+          provided, a food allowance must be paid. Register workers for pension
+          and health insurance, just like local employees.
         </p>
       ),
     },
@@ -38,24 +46,44 @@ const FAQSection = () => {
         "What conditions must I meet to obtain a residence and work permit?",
       answer: (
         <ul className="list-disc pl-5">
-          <li>Operating economic activities registered in RH</li>
           <li>
-            Employing at least 1/4 Croatian nationals in relation to foreign
-            workers
+            Conduct economic activity in a field registered in the country.
           </li>
-          <li>Proof of non-existent debt</li>
-          <li>Not convicted of labor criminal offenses</li>
+          <li>
+            Employ at least 1/4 Croatian citizens compared to foreign workers,
+            on a full-time and indefinite basis for the past 6 months.
+          </li>
+          <li>
+            Provide a certificate from the Tax Administration confirming no
+            outstanding public debts, dated no earlier than the permit
+            application submission.
+          </li>
+          <li>
+            Ensure no final convictions for labor-related or social security
+            offenses.
+          </li>
         </ul>
       ),
     },
     {
       question: "Can the worker come immediately?",
       answer: (
-        <p>
-          No, the worker cannot come immediately. A work permit and visa are
-          required. The process takes between 45 and 90 days, depending on the
-          institutions.
-        </p>
+        <ul className="list-disc pl-5">
+          <p>
+            No. For third-country nationals, a work permit and visa are
+            required, which can take 45 to 90 days depending on the efficiency
+            of relevant institutions.
+          </p>
+          <li>Document preparation: 4–10 days (employer-dependent).</li>
+          <li>
+            Recruitment and selection: 1–30 days (up to 60 days for specialized
+            roles).
+          </li>
+          <li>Labor market test (if applicable): 15 days.</li>
+          <li>Work permit processing: 15–30 days.</li>
+          <li>Visa processing: 15–30 days.</li>
+          <li>Travel arrangements: 1–10 days.</li>
+        </ul>
       ),
     },
   ];
