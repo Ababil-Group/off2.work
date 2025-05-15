@@ -190,7 +190,7 @@ export function Navbar() {
                                 <ChevronDown className="h-4 w-4" />
                               </div>
                             </DropdownMenuTrigger>
-                            <DropdownMenuContent align="start" className="w-48">
+                            <DropdownMenuContent align="start" className="w-64">
                               {item.children.map((child) => (
                                 <DropdownMenuItem key={child.title} asChild>
                                   <Link href={child.href}>{child.title}</Link>
