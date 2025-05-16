@@ -28,15 +28,15 @@ const navItems: NavItem[] = [
     children: [
       {
         title: "Hire Talent-Trained Workers",
-        href: "/en/services/hire-talent-trained-workers",
+        href: "/en/services/hires",
       },
       {
         title: "Work Permit Assistance",
-        href: "/en/services/hire-talent-trained-workers",
+        href: "/en/services/hires",
       },
       {
         title: "Your Trusted Workforce Partner",
-        href: "/en/services/hire-talent-trained-workers",
+        href: "/en/services/hires",
       },
     ],
   },
