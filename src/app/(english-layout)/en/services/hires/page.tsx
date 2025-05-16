@@ -1,7 +1,7 @@
 import { ArrowBigRight } from "lucide-react";
 import React from "react";
 
-const list = [
+const listData = [
   {
     listt: "Hire Talent-Trained Workers",
     lists: [
@@ -134,12 +134,26 @@ export default function ServiceDetailsPageEnglish() {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#414047] p-8 rounded-2xl">
           <div className="space-y-3">
-            
             <p className="text-lg text-gray-200">
               From sourcing to onboarding, we take care of everything, ensuring
               you get the right talent for your business.
             </p>
           </div>
+        </div>
+      </div>
+
+      <div className="max-w-screen-lg mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
+          {listData.map((list, indx) => (
+            <div key={indx} className="bg-white/90 shadow space-y-4 p-2">
+              <h2>{list.listt}</h2>
+              {list.lists.map((item, indx) => (
+                <div key={indx} className="space-y-4">
+                  <p>{item.list}</p>
+                </div>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
     </div>
