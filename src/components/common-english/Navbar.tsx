@@ -193,7 +193,12 @@ export function Navbar() {
                             <DropdownMenuContent align="start" className="w-64">
                               {item.children.map((child) => (
                                 <DropdownMenuItem key={child.title} asChild>
-                                  <Link href={child.href}>{child.title}</Link>
+                                  <Link
+                                    href={child.href}
+                                    className="font-medium"
+                                  >
+                                    {child.title}
+                                  </Link>
                                 </DropdownMenuItem>
                               ))}
                             </DropdownMenuContent>
