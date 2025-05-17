@@ -25,7 +25,7 @@ export default function WorkerSection() {
             extensive network, ensuring your business has the manpower it needs
             during peak seasons.
           </p>
-          <Button className="bg-[#642D91] hover:bg-[#642D91]/80 cursor-pointer hover:shadow-2xl hover:scale-105 transition-transform duration-300 text-white px-6 py-3 rounded-lg uppercase">
+          <Button className="bg-gray-800 hover:bg-blue-600 text-xl cursor-pointer hover:shadow-2xl hover:scale-105 transition-transform duration-300 text-white px-6 py-3 rounded-lg uppercase">
             Get in Touch
           </Button>
         </div>

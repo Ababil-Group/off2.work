@@ -89,7 +89,7 @@ const FAQSection = () => {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto my-10 px-4">
+    <div id="faq" className="max-w-4xl mx-auto my-10 px-4">
       <h2 className="text-2xl font-bold text-center mb-6 text-[#023a51]">
         Most Common Questions
       </h2>

@@ -97,13 +97,13 @@ export function Navbar() {
                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between pl-4 lg:pl-0 lg:space-x-6">
                   <div className="hidden lg:flex items-center space-x-6 border-b border-gray-400 pb-4">
                     <Link
-                      href="/offices"
+                      href="#offices"
                       className="text-sm text-[#0f2a47] hover:underline"
                     >
                       Explore Our Locations
                     </Link>
                     <Link
-                      href="/faq"
+                      href="/en/contact#faq"
                       className="text-sm text-[#0f2a47] hover:underline"
                     >
                       FAQs
@@ -136,7 +136,7 @@ export function Navbar() {
                           height={20}
                         />
                       </Link>
-                      <Link
+                      {/* <Link
                         href={
                           pathname === "/en"
                             ? "/"
@@ -150,7 +150,7 @@ export function Navbar() {
                           width={28}
                           height={20}
                         />
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                 </div>

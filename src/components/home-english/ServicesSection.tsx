@@ -68,23 +68,23 @@ export default function ServicesSection() {
       </div>
       <div className="flex items-center justify-center">
         <Link href="/services">
-          <Button className="bg-[#3E4247] hover:bg-[#3E4247]/80">
+          <Button className="bg-[#3E4247] hover:bg-blue-600 text-xl">
             Explore Our Services
           </Button>
         </Link>
       </div>
 
-      <div className="rounded-lg p-8 text-center max-w-[600px] mx-auto">
-        <h3 className="text-2xl font-semibold text-[#3E4247] mb-4">
+      <div className="rounded-lg p-8 text-center max-w-[600px] mx-auto ">
+        <h3 className="text-4xl font-semibold text-[#3E4247] mb-4 lg:text-5xl">
           Your Trusted Partner in Workforce Solutions
         </h3>
-        <p className="text-muted-foreground mb-6">
+        <p className="text-muted-foreground text-lg mb-6">
           Rely on our experts to manage the entire process—from selecting and
           recruiting to employing skilled foreign workers. We ensure seamless
           integration and compliance, so your business thrives.
         </p>
         <Link href="/services">
-          <Button className="bg-[#3E4247] hover:bg-[#3E4247]/80">
+          <Button className="bg-[#3E4247] hover:bg-blue-600 text-xl">
             Discover Our Services
           </Button>
         </Link>

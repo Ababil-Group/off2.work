@@ -1,8 +1,17 @@
 "use client";
 
-import { Phone, Mail } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { AiFillTikTok } from "react-icons/ai";
+import { FaFacebookSquare } from "react-icons/fa";
+
+import {
+  FaLinkedin,
+  FaYoutube,
+  FaSquareTwitter,
+  FaSquarePinterest,
+} from "react-icons/fa6";
+import { ArrowUpToLine, MapPinCheckInside } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -80,26 +89,35 @@ const Footer = () => {
           {/* Right Section */}
           <div className="space-y-2">
             <h3 className="text-2xl text-[#023a51] font-semibold">Addresses</h3>
-            <p className="text-lg font-bold text-[#616e84] ">Romania Office:</p>
-            <p className="text-base text-[#262930]">
-              Municipiul Ploiesti, Strada MIHAI BRAVU, Nr. 239, Bloc C4, Ap.71,
-              Judet Prahova, Romania
+            <p className="text-lg font-bold text-[#616e84] flex items-center gap-3">
+              <span>
+                <MapPinCheckInside />
+              </span>
+              Romania Office:
             </p>
-            <p className="text-lg text-[#616e84] font-bold">Dubai Office:</p>
-            <p className="text-base text-[#262930]">
-              The Meydan Hotel, Grandstand, 6th Floor, Meydan Road, Nad Al
-              Sheba, Dubai, UAE
+            <Link href={""} className="text-base text-[#262930]">
+              HQ {">"} Municipiul Ploieşti, Strada MIHAI BRAVU, Nr. 239, Bloc
+              C4, Ap. 71, Judet Prahova
+            </Link>
+            <p className="text-lg text-[#616e84] font-bold flex items-center mt-2 gap-3">
+              <span>
+                <MapPinCheckInside />
+              </span>
+              New Zealand:
             </p>
-            <div className="mt-4 flex flex-col space-y-2 max-w-[250px]">
-              <div className="flex items-center bg-gray-100 p-3 rounded-lg text-[#262930]  hover:text-white hover:bg-[#063556]">
-                <Phone className="w-4 h-4  mr-2" />
-                <span className="">+123-234-1234</span>
-              </div>
-              <div className="flex items-center bg-gray-100 p-3 rounded-lg text-[#262930]  hover:text-white hover:bg-[#063556]">
-                <Mail className="w-4 h-4  mr-2" />
-                <span className="">info@off2.work</span>
-              </div>
-            </div>
+            <Link href={""} className="text-base text-[#262930]">
+              Level 1/3 Johnsonville Road, Johnsonville, Wellington 6037
+            </Link>
+
+            <p className="text-lg text-[#616e84] font-bold flex items-center mt-2 gap-3">
+              <span>
+                <MapPinCheckInside />
+              </span>
+              Australia:
+            </p>
+            <Link href={""} className="text-base text-[#262930]">
+              Level 25, 108 St Georges Terrace, Perth WA 6000
+            </Link>
           </div>
         </div>
 
@@ -111,8 +129,52 @@ const Footer = () => {
               Innovation
             </Link>
           </p>
-          <Link href="#top" className="block text-[#063556] hover:underline">
-            Back to top
+          <div className="flex items-center gap-2">
+            <Link
+              href={"https://www.facebook.com/off2work"}
+              target="_blank"
+              className="  "
+            >
+              <FaFacebookSquare className="w-8 h-8 p-1 bg-gray-600 text-white hover:bg-blue-900 rounded-md hover:text-white hover:translate-y-2 transition-transform duration-300 hover:shadow-2xl shadow-gray-400" />
+            </Link>
+            <Link
+              href={"https://www.linkedin.com/company/off2-work"}
+              className="  "
+              target="_blank"
+            >
+              <FaLinkedin className="w-8 h-8 p-1 bg-gray-600 text-white hover:bg-blue-900 rounded-md hover:text-white hover:translate-y-2 transition-transform duration-300 hover:shadow-2xl shadow-gray-400" />
+            </Link>
+            <Link
+              href={"https://x.com/off2_work"}
+              className="  "
+              target="_blank"
+            >
+              <FaSquareTwitter className="w-8 h-8 p-1 bg-gray-600 text-white hover:bg-blue-900 rounded-md hover:text-white hover:translate-y-2 transition-transform duration-300 hover:shadow-2xl shadow-gray-400" />
+            </Link>
+            <Link
+              href={"https://in.pinterest.com/off_2_work"}
+              className="  "
+              target="_blank"
+            >
+              <FaSquarePinterest className="w-8 h-8 p-1 bg-gray-600 text-white hover:bg-blue-900 rounded-md hover:text-white hover:translate-y-2 transition-transform duration-300 hover:shadow-2xl shadow-gray-400" />
+            </Link>
+            <Link
+              href={"https://www.youtube.com/@Off2Work"}
+              className="  "
+              target="_blank"
+            >
+              <FaYoutube className="w-8 h-8 p-1 bg-gray-600 text-white hover:bg-blue-900 rounded-md hover:text-white hover:translate-y-2 transition-transform duration-300 hover:shadow-2xl shadow-gray-400" />
+            </Link>
+            <Link
+              href={"https://www.tiktok.com/@off2.work"}
+              className="  "
+              target="_blank"
+            >
+              <AiFillTikTok className="w-8 h-8 p-1 bg-gray-600 text-white hover:bg-blue-900 rounded-md hover:text-white hover:translate-y-2 transition-transform duration-300 hover:shadow-2xl shadow-gray-400" />
+            </Link>
+          </div>
+          <Link href="#top" className="block text-[#063556] hover:underline flex items-center">
+            Back to top <ArrowUpToLine/>
           </Link>
         </div>
       </div>

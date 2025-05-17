@@ -118,7 +118,6 @@ export default function ReferencePageEnglish() {
     },
   ];
 
-  // Auto-play functionality
   useEffect(() => {
     if (!isAutoPlaying) return;
 
