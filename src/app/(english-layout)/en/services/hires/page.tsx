@@ -1,4 +1,4 @@
-import { ArrowBigRight } from "lucide-react";
+import { ArrowBigRight, ArrowRight } from "lucide-react";
 import React from "react";
 
 const listData = [
@@ -124,36 +124,38 @@ export default function ServiceDetailsPageEnglish() {
           </div>
         </div>
       </div>
-      <div className="w-full bg-white max-w-screen-lg mx-auto my-6">
-        <h2 className="text-center text-4xl text-[#023a51] font-bold mb-8">
-          Choose a service tailored to your business .
-        </h2>
-        <p className="text-lg text-center">
-          Discover the advantages of our specialized services designed to meet
-          your unique needs.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#414047] p-8 rounded-2xl">
-          <div className="space-y-3">
-            <p className="text-lg text-gray-200">
-              From sourcing to onboarding, we take care of everything, ensuring
-              you get the right talent for your business.
+
+      <div className="bg-gray-200 py-10">
+        <div className="max-w-screen-lg mx-auto p-2">
+          <div className="max-w-[500px] mx-auto my-6">
+            <h2 className="text-[#023a51]  font-bold text-4xl text-center mb-4">
+              Choose a service tailored to your business.
+            </h2>
+            <p className="text-lg text-center">
+              Discover the advantages of our specialized services designed to
+              meet your unique needs.
             </p>
           </div>
-        </div>
-      </div>
-
-      <div className="max-w-screen-lg mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
-          {listData.map((list, indx) => (
-            <div key={indx} className="bg-white/90 shadow space-y-4 p-2">
-              <h2>{list.listt}</h2>
-              {list.lists.map((item, indx) => (
-                <div key={indx} className="space-y-4">
-                  <p>{item.list}</p>
-                </div>
-              ))}
-            </div>
-          ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-2">
+            {listData.map((list, indx) => (
+              <div
+                key={indx}
+                className="bg-gray-50 rounded-md flex flex-col items-center justify-center hover:shadow-2xl shadow-gray-400 transition-transform duration-300 cursor-pointer shadow space-y-4 px-3 py-4"
+              >
+                <h2 className="text-lg font-semibold text-center border-b-2">
+                  {list.listt}
+                </h2>
+                {list.lists.map((item, indx) => (
+                  <div key={indx} className="space-y-4 flex items-center gap-2">
+                    <span>
+                      <ArrowRight className="w-5 h-5 text-black" />
+                    </span>
+                    <p className="text-base hover:text-blue-800">{item.list}</p>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

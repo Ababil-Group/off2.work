@@ -59,7 +59,7 @@ export function Navbar() {
         <div className="max-w-[1250px] mx-auto px-2">
           <div className="flex flex-col lg:flex-row lg:items-center">
             <div className="flex items-center justify-between pr-8 py-4 lg:py-0">
-              <Image src="/images/logo.png" alt="" width={200} height={200} />
+              <Image src="/images/off2worklogo.png" alt="" width={200} height={200} />
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="lg:hidden text-[#0f2a47] hover:text-gray-600"

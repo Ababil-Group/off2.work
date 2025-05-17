@@ -6,14 +6,8 @@ import { ChevronDown, Phone, Menu, X, Mail } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 import { cn } from "@/lib/utils";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-
 import Image from "next/image";
+
 interface NavItem {
   title: string;
   href: string;
@@ -66,9 +60,6 @@ export function Navbar() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = React.useState(false);
   const isScrolled = useIsScrolled();
-
-  console.log("pathname", pathname);
-
   return (
     <>
       {/* Top Navbar */}
@@ -175,34 +166,31 @@ export function Navbar() {
                 <nav className="bg-white">
                   <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mt-2 px-4 space-y-2 lg:space-y-0">
                     {navItems.map((item) => (
-                      <div key={item.title} className="relative group ">
+                      <div key={item.title} className="relative group">
                         {item.children ? (
-                          <DropdownMenu>
-                            <DropdownMenuTrigger asChild>
-                              <div
-                                className={cn(
-                                  "flex items-center rounded-none gap-1 text-lg py-2 lg:py-3 cursor-pointer text-[#0f2a47] hover:bg-gray-50 border-y-2 border-transparent hover:border-[#0f2a47]",
-                                  pathname === item.href &&
-                                    "border-y-2 border-[#0f2a47]"
-                                )}
-                              >
-                                {item.title}
-                                <ChevronDown className="h-4 w-4" />
-                              </div>
-                            </DropdownMenuTrigger>
-                            <DropdownMenuContent align="start" className="w-64">
+                          <div className="relative">
+                            <div
+                              className={cn(
+                                "flex items-center rounded-none gap-1 text-lg py-2 lg:py-3 cursor-pointer text-[#0f2a47] hover:bg-gray-50 border-y-2 border-transparent hover:border-[#0f2a47]",
+                                pathname === item.href &&
+                                  "border-y-2 border-[#0f2a47]"
+                              )}
+                            >
+                              {item.title}
+                              <ChevronDown className="h-4 w-4" />
+                            </div>
+                            <div className="absolute left-0 top-full hidden group-hover:block w-64 bg-white shadow-lg z-50 border border-gray-200">
                               {item.children.map((child) => (
-                                <DropdownMenuItem key={child.title} asChild>
-                                  <Link
-                                    href={child.href}
-                                    className="font-medium"
-                                  >
-                                    {child.title}
-                                  </Link>
-                                </DropdownMenuItem>
+                                <Link
+                                  key={child.title}
+                                  href={child.href}
+                                  className="block px-4 py-3 text-lg text-[#0f2a47] hover:bg-gray-50"
+                                >
+                                  {child.title}
+                                </Link>
                               ))}
-                            </DropdownMenuContent>
-                          </DropdownMenu>
+                            </div>
+                          </div>
                         ) : (
                           <Link
                             href={item.href}

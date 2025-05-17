@@ -10,7 +10,12 @@ const Footer = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Left Section */}
         <div>
-          <Image src="/images/logo.png" alt="Logo" width={140} height={40} />
+          <Image
+            src="/images/off2worklogo.png"
+            alt="Logo"
+            width={140}
+            height={40}
+          />
           <p className="mt-4 text-base text-[#616e84]">
             Povjerite svoje poslovanje našim stručnjacima te uz njihovu pomoć
             procijenite kako na najbolji način organizirati rad stranih radnika
