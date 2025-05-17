@@ -1,7 +1,7 @@
 "use client";
 
 import LogoGallery from "@/components/home/LogoGallary";
-import { Button } from "@/components/ui/button";
+
 import {
   CheckCircle,
   ChevronLeft,
@@ -18,39 +18,6 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-
-const list = [
-  {
-    text: "Off2 Work’s professional approach and expertise gave us the assurance we needed to confidently hire foreign workers for our business. We look forward to a long and fruitful collaboration.",
-    name: "Marko Jurić",
-    companyt: "ABC Solutions",
-  },
-  {
-    text: "Our partnership with Off2 Work in hiring over 200 skilled workers from Nepal for our agricultural operations in 2022 was seamless and efficient. Their deep understanding of foreign employment processes made all the difference.",
-    name: "Ana Petrović",
-    companyt: "Green Harvest Ltd.",
-  },
-  {
-    text: "Thanks to Off2 Work, we’ve resolved our staffing challenges with ease. After just one season, we’re confident in their ability to consistently provide motivated and reliable workers.",
-    name: "Ivana Novak",
-    companyt: "Family Farm Novak",
-  },
-  {
-    text: "Off2 Work’s expertise simplified the recruitment process for us. Their professionalism and dedication make them stand out in this field",
-    name: "Hrvoje Kovačić",
-    companyt: "Kovačić Orchards",
-  },
-  {
-    text: "The workers we hired through Off2 Work were diligent, dependable, and hardworking. Their step-by-step guidance was invaluable to ensuring smooth operations.",
-    name: "Zoran Horvat",
-    companyt: "Horvat Farms",
-  },
-  {
-    text: "Off2 Work supported us throughout the entire process—from selecting candidates to managing documentation and providing post-arrival assistance. They’ve proven to be exceptional partners, and we continue to work with them successfully.",
-    name: "Filip Matić",
-    companyt: "NutriGrow Ltd.",
-  },
-];
 
 export default function ReferencePageEnglish() {
   const [activeStep, setActiveStep] = useState(1);

@@ -26,11 +26,11 @@ const navItems: NavItem[] = [
       },
       {
         title: "Work Permit Assistance",
-        href: "/en/services/work-permit",
+        href: "/en/services/workpermit",
       },
       {
         title: "Your Trusted Workforce Partner",
-        href: "/en/services/trusted-workforce",
+        href: "/en/services/trustedworkforce",
       },
     ],
   },
