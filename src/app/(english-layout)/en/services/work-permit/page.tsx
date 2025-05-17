@@ -57,6 +57,7 @@ const listData = [
     ],
   },
 ];
+
 export default function ServiceDetailsPageEnglish() {
   const services = [
     {
@@ -97,62 +98,64 @@ export default function ServiceDetailsPageEnglish() {
       >
         <div className="max-w-screen-md mx-auto min-h-[400px] space-y-4 text-center mt-8">
           <p className="text-2xl text-[#023a51] font-semibold my-4 ">
-            Hire Talent-Trained Workers
+            Work Permit Assistance
           </p>
           <p className="text-5xl text-[#023a51] font-bold my-4">
-            End-to-End Recruitment Solutions
+            We provide comprehensive assistance in Work Permit Assistance
           </p>
           <p className="text-xl  text-foreground-muted">
-            We manage the entire process of hiring foreign workers. Trust us to
-            find, select, and recruit motivated, skilled professionals tailored
-            to your business needs.
+            Trust us to handle the search, selection, and recruitment of
+            motivated, skilled professionals tailored to your needs.
           </p>
         </div>
       </div>
       <div className="w-full bg-white max-w-screen-lg mx-auto my-6">
         <h2 className="text-4xl font-bold text-gray-900 sm:text-5xl mb-6">
-          When is <span className="text-blue-600">Hiring</span> Talent-Trained Workers the Best Choice?
+          When <span className="text-blue-600">Work Permit</span> Assistance
+          Proves Indispensable
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#414047] p-8 rounded-2xl">
           <div className="space-y-3">
             <span className="flex items-center text-gray-100 gap-3 font-semibold text-xl">
               <ArrowBigRight />
-              <h3>We Handle the Entire Hiring Process</h3>
+              <h3>Expert Guidance Every Step of the Way</h3>
             </span>
             <p className="text-lg text-gray-200">
-              From sourcing to onboarding, we take care of everything, ensuring
-              you get the right talent for your business.
+              If you’ve already identified your ideal candidates, we step in to
+              manage the administrative and legal processes, ensuring a smooth
+              hiring experience.
             </p>
           </div>
           <div className="space-y-3">
             <span className="flex items-center text-gray-100 gap-3 font-semibold text-xl">
               <ArrowBigRight />
-              <h3>Access a Diverse Talent Pool</h3>
+              <h3>Simplifying the Employment Process</h3>
             </span>
             <p className="text-lg text-gray-200">
-              Our extensive network and collaboration with local partners allow
-              us to provide candidates with the skills and qualifications you
-              need, across various industries.
+              We handle all documentation, including work permits, visas, and
+              employment contracts, making it easier for you to onboard foreign
+              workers.
             </p>
           </div>
           <div className="space-y-3">
             <span className="flex items-center text-gray-100 gap-3 font-semibold text-xl">
               <ArrowBigRight />
-              <h3>End-to-End Administration and Logistics</h3>
+              <h3>Managed by Industry Experts</h3>
             </span>
             <p className="text-lg text-gray-200">
-              We manage all aspects of hiring, from work permits and visas to
-              transportation and onboarding, so you can focus on your business.
+              Our team specializes in employment and immigration processes,
+              ensuring compliance and efficiency at every stage.
             </p>
           </div>
           <div className="space-y-3">
             <span className="flex items-center text-gray-100 gap-3 font-semibold text-xl">
               <ArrowBigRight />
-              <h3>Reliable, Fast, and Efficient Solutions</h3>
+              <h3>All-in-One Employment Solutions</h3>
             </span>
             <p className="text-lg text-gray-200">
-              We deliver qualified, motivated staff who are ready to meet your
-              challenges and contribute to your success.
+              From visa processing and document translation to preparing
+              employment contracts, we provide everything you need to hire
+              foreign workers seamlessly.
             </p>
           </div>
         </div>

@@ -84,6 +84,7 @@ export default function ServiceDetailsPageEnglish() {
       gradient: "bg-gradient-to-br from-purple-50 to-purple-100",
     },
   ];
+
   return (
     <div className="">
       <div
@@ -97,31 +98,32 @@ export default function ServiceDetailsPageEnglish() {
       >
         <div className="max-w-screen-md mx-auto min-h-[400px] space-y-4 text-center mt-8">
           <p className="text-2xl text-[#023a51] font-semibold my-4 ">
-            Hire Talent-Trained Workers
+            Your Trusted Workforce Partner
           </p>
           <p className="text-5xl text-[#023a51] font-bold my-4">
-            End-to-End Recruitment Solutions
+            Hire foreign workers for specific projects or timeframes
           </p>
           <p className="text-xl  text-foreground-muted">
-            We manage the entire process of hiring foreign workers. Trust us to
-            find, select, and recruit motivated, skilled professionals tailored
-            to your business needs.
+            Enjoy lower costs and simplified administration while we handle the
+            complexities.
           </p>
         </div>
       </div>
       <div className="w-full bg-white max-w-screen-lg mx-auto my-6">
         <h2 className="text-4xl font-bold text-gray-900 sm:text-5xl mb-6">
-          When is <span className="text-blue-600">Hiring</span> Talent-Trained Workers the Best Choice?
+          When is <span className="text-blue-600">Hiring Temporary </span>
+          Workers the Best Choice?
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#414047] p-8 rounded-2xl">
           <div className="space-y-3">
             <span className="flex items-center text-gray-100 gap-3 font-semibold text-xl">
               <ArrowBigRight />
-              <h3>We Handle the Entire Hiring Process</h3>
+              <h3>Hire Skilled Workers for Short-Term Needs</h3>
             </span>
             <p className="text-lg text-gray-200">
-              From sourcing to onboarding, we take care of everything, ensuring
-              you get the right talent for your business.
+              Outsourced workers integrate seamlessly into your workflows,
+              supervised by your team, while we manage recruitment, payroll, and
+              compliance.
             </p>
           </div>
           <div className="space-y-3">
@@ -130,29 +132,30 @@ export default function ServiceDetailsPageEnglish() {
               <h3>Access a Diverse Talent Pool</h3>
             </span>
             <p className="text-lg text-gray-200">
-              Our extensive network and collaboration with local partners allow
-              us to provide candidates with the skills and qualifications you
-              need, across various industries.
+              We provide candidates with the right qualifications and skills,
+              tailored to your industry and project requirements.
             </p>
           </div>
           <div className="space-y-3">
             <span className="flex items-center text-gray-100 gap-3 font-semibold text-xl">
               <ArrowBigRight />
-              <h3>End-to-End Administration and Logistics</h3>
+              <h3>Streamlined Process, No Hassle</h3>
             </span>
             <p className="text-lg text-gray-200">
-              We manage all aspects of hiring, from work permits and visas to
-              transportation and onboarding, so you can focus on your business.
+              From recruitment to payroll, medical checks, and workplace safety,
+              we handle all administrative tasks, so you can focus on your
+              business.
             </p>
           </div>
           <div className="space-y-3">
             <span className="flex items-center text-gray-100 gap-3 font-semibold text-xl">
               <ArrowBigRight />
-              <h3>Reliable, Fast, and Efficient Solutions</h3>
+              <h3>Fast and Efficient Hiring</h3>
             </span>
             <p className="text-lg text-gray-200">
-              We deliver qualified, motivated staff who are ready to meet your
-              challenges and contribute to your success.
+              With workers pre-equipped with valid permits, this service offers
+              speed and flexibility. After a trial period, you can transition
+              them to permanent roles if needed.
             </p>
           </div>
         </div>

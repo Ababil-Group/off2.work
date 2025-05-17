@@ -48,7 +48,7 @@ export default function IndustriesEnglishPage() {
         }}
         className="h-[400px] w-full flex items-center justify-center"
       >
-        <div className="text-start max-w-[500px] h-[400px] mt-8">
+        <div className="text-start max-w-screen-md h-[400px] mt-8 p-4">
           <p className="text-2xl text-[#023a51] my-4">Industries We Serve</p>
           <p className="text-5xl text-[#023a51] font-bold my-4">
             We specialize in finding the ideal staff for your business.
@@ -134,7 +134,8 @@ export default function IndustriesEnglishPage() {
             Construction and industry.
           </h2>
           <p className="text-gray-600 mb-6">
-            We provide skilled workers for construction and industrial projects, sourced from reliable partners in countries like Uzbekistan.
+            We provide skilled workers for construction and industrial projects,
+            sourced from reliable partners in countries like Uzbekistan.
           </p>
 
           <div className="space-y-4">
@@ -178,7 +179,8 @@ export default function IndustriesEnglishPage() {
             Shipbuilding.
           </h2>
           <p className="text-gray-600 mb-6">
-            We recruit experienced welders and motivated workers for the shipbuilding industry.
+            We recruit experienced welders and motivated workers for the
+            shipbuilding industry.
           </p>
 
           <div className="space-y-4">
@@ -196,9 +198,12 @@ export default function IndustriesEnglishPage() {
       </div>
       <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row bg-white gap-4 mt-30 -mb-10">
         <div className="w-full md:w-1/2 p-8 bg-white flex flex-col justify-center rounded-2xl overflow-hidden shadow">
-          <h2 className="text-3xl font-bold text-[#003459] mb-4">Tourism and Hospitality</h2>
+          <h2 className="text-3xl font-bold text-[#003459] mb-4">
+            Tourism and Hospitality
+          </h2>
           <p className="text-gray-600 mb-6">
-            We supply qualified workers for all positions in tourism and catering.
+            We supply qualified workers for all positions in tourism and
+            catering.
           </p>
 
           <div className="space-y-4">

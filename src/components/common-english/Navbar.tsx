@@ -26,11 +26,11 @@ const navItems: NavItem[] = [
       },
       {
         title: "Work Permit Assistance",
-        href: "/en/services/hires",
+        href: "/en/services/work-permit",
       },
       {
         title: "Your Trusted Workforce Partner",
-        href: "/en/services/hires",
+        href: "/en/services/trusted-workforce",
       },
     ],
   },
@@ -207,7 +207,7 @@ export function Navbar() {
                     ))}
                     <Link
                       href="/en/contact"
-                      className="inline-block rounded-2xl bg-[#0f2a47] px-6 py-3 text-white hover:bg-red-500 text-center"
+                      className="inline-block rounded-2xl bg-[#0f2a47] px-6 py-3 text-white hover:bg-blue-600 text-center"
                     >
                       Contact Us
                     </Link>
