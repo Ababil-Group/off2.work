@@ -11,10 +11,15 @@ export default function WorkerSection() {
   ];
   return (
     <div className="w-full  relative overflow-hidden">
-      <div className="absolute inset-0">
-        <Image src="/images/worker-bg.png" alt="Background" fill priority />
+      <div className="absolute inset-0 z-10">
+        <Image
+          src="/images/Off2work/1x/asset2.png"
+          alt="Background"
+          fill
+          priority
+        />
       </div>
-      <section className="bg-[#053b60]/90  relative  z-20 text-white py-12 px-6 md:px-20 flex flex-col md:flex-row items-center">
+      <section className="bg-[#3E3F48]/90 relative z-20 text-white py-12 px-6 md:px-20 flex flex-col md:flex-row items-center">
         {/* Left Content */}
         <div className="md:w-1/2 text-center ">
           <h2 className="text-3xl font-bold mb-4">
@@ -33,7 +38,7 @@ export default function WorkerSection() {
         {/* Right Image */}
         <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
           <Image
-            src="/images/factory-workers-greeting-each-other-successful-teamwork-Large-scaled.jpeg" // Replace with your actual image path
+            src="/images/Off2work/seasonal-workers-from-our-network.jpeg" // Replace with your actual image path
             alt="Sezonski radnici"
             width={500}
             height={300}
@@ -46,7 +51,7 @@ export default function WorkerSection() {
         {/* Right Image */}
         <div className="md:w-1/2 lg:w-1/3 mt-8 md:mt-0 ">
           <Image
-            src="/images/Velika-stavka-pexels-grape-things.jpeg" // Replace with your actual image path
+            src="/images/Off2work/your-partner-in-boosting-productivity-and-growth.jpg" // Replace with your actual image path
             alt="Sezonski radnici"
             width={400}
             height={300}
@@ -79,7 +84,7 @@ export default function WorkerSection() {
           </Button> */}
         </div>
       </section>
-      <section className="relative z-20 bg-gradient-to-b from-red-700 to-pink-500 text-white py-12 px-6 md:px-20 flex flex-col md:flex-row items-center justify-between">
+      <section className="relative z-20 bg-gradient-to-b from-[#3E3F48]/90 to-blue-400 text-white py-12 px-6 md:px-20 flex flex-col md:flex-row items-center justify-between">
         {/* Left Content */}
         <div className="md:w-2/3 text-center md:text-left">
           <h2 className="text-3xl font-bold mb-4">Live Interview Service</h2>
@@ -101,7 +106,7 @@ export default function WorkerSection() {
 
           {/* Image */}
           <Image
-            src="/images/young-people-making-podcast.jpeg" // Replace with actual image path
+            src="/images/Off2work/live-interview-service.jpg" // Replace with actual image path
             alt="Live Interview"
             width={200}
             height={150}

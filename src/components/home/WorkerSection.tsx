@@ -14,7 +14,7 @@ export default function WorkerSection() {
       <div className="absolute inset-0">
         <Image src="/images/worker-bg.png" alt="Background" fill priority />
       </div>
-      <section className="bg-[#053b60]/90  relative  z-20 text-white py-12 px-6 md:px-20 flex flex-col md:flex-row items-center">
+      <section className="bg-[#3E3F48]/90  relative  z-20 text-white py-12 px-6 md:px-20 flex flex-col md:flex-row items-center">
         {/* Left Content */}
         <div className="md:w-1/2 text-center ">
           <h2 className="text-3xl font-bold mb-4">

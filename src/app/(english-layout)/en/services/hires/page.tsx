@@ -85,21 +85,21 @@ export default function ServiceDetailsPageEnglish() {
     },
   ];
   return (
-    <div className="">
+    <div className="min-h-screen pt-5">
       <div
         style={{
-          backgroundImage: "url('/images/contact-bg.png')",
+          backgroundImage: "url('/images/Off2work/1x/asset2.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
-        className="w-full flex items-center justify-center"
+        className="h-[500px] w-full flex items-center justify-center"
       >
-        <div className="max-w-screen-md mx-auto min-h-[400px] space-y-4 text-center mt-8">
-          <p className="text-2xl text-[#023a51] font-semibold my-4 ">
+        <div className="text-start max-w-screen-md mx-auto h-[400px] mt-8 p-4">
+          <p className="text-2xl  text-[#023a51] my-4">
             Hire Talent-Trained Workers
           </p>
-          <p className="text-5xl text-[#023a51] font-bold my-4">
+          <p className="text-4xl md:text-5xl text-[#023a51] font-bold my-4">
             End-to-End Recruitment Solutions
           </p>
           <p className="text-xl  text-foreground-muted">
@@ -109,9 +109,10 @@ export default function ServiceDetailsPageEnglish() {
           </p>
         </div>
       </div>
-      <div className="w-full bg-white max-w-screen-lg mx-auto my-6">
-        <h2 className="text-4xl font-bold text-gray-900 sm:text-5xl mb-6">
-          When is <span className="text-blue-600">Hiring</span> Talent-Trained Workers the Best Choice?
+      <div className="w-full bg-white max-w-screen-lg mx-auto my-6 ">
+        <h2 className="text-4xl font-bold text-gray-900 sm:text-5xl mb-6 p-4">
+          When is <span className="text-blue-600">Hiring</span> Talent-Trained
+          Workers the Best Choice?
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#414047] p-8 rounded-2xl">
           <div className="space-y-3">

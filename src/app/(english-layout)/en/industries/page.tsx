@@ -38,19 +38,19 @@ export default function IndustriesEnglishPage() {
   ];
 
   return (
-    <div className=" min-h-screen pt-5">
+    <div className="min-h-screen pt-5 overflow-hidden">
       <div
         style={{
-          backgroundImage: "url('/images/contact-bg.png')",
+          backgroundImage: "url('/images/Off2work/1x/asset2.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
-        className="h-[400px] w-full flex items-center justify-center"
+        className="h-[500px] w-full flex items-center justify-center"
       >
-        <div className="text-start max-w-screen-md h-[400px] mt-8 p-4">
+        <div className="text-start max-w-screen-md mx-auto h-[400px] mt-8 p-4">
           <p className="text-2xl text-[#023a51] my-4">Industries We Serve</p>
-          <p className="text-5xl text-[#023a51] font-bold my-4">
+          <p className="text-4xl md:text-5xl text-[#023a51] font-bold my-4">
             We specialize in finding the ideal staff for your business.
           </p>
           <p className="text-xl text-foreground-muted">
@@ -59,7 +59,7 @@ export default function IndustriesEnglishPage() {
           </p>
         </div>
       </div>
-      <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row bg-white gap-4 mt-20 -mb-10">
+      <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row bg-white gap-4 mt-2 md:mt-20 -mb-10">
         <div className="w-full md:w-1/2 p-8 bg-white flex flex-col justify-center rounded-2xl overflow-hidden shadow">
           <h2 className="text-3xl font-bold text-[#003459] mb-4">
             Agriculture.
@@ -83,26 +83,28 @@ export default function IndustriesEnglishPage() {
           </div>
         </div>
 
-        <div className="w-full md:w-1/3 relative rounded-2xl overflow-hidden shadow">
+        <div className="w-full md:w-1/3 h-[300px] md:h-auto relative rounded-2xl overflow-hidden shadow">
           <Image
-            src="/images/Velika-stavka-pexels-josh-hild.jpeg"
-            alt="Apples in wooden box"
-            layout="fill"
-            objectFit="cover"
-            className="absolute inset-0"
+            src="/images/Off2work/Area-of-Work/agriculture.jpg"
+            alt="Agriculture"
+            fill
+            className="object-cover"
+            priority
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
           <div className="absolute inset-0 bg-black/20"></div>
         </div>
       </div>
-      <div className="bg-[#063556] h-[180px]" />
-      <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row  gap-4 -mt-10 mb-30">
-        <div className="w-full md:w-1/3 relative rounded-2xl overflow-hidden shadow">
+      <div className="bg-[#3E3F49] h-[180px]" />
+      <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row flex-col-reverse gap-4 -mt-10 mb-8 md:mb-30">
+        <div className="w-full md:w-1/3 h-[300px] md:h-auto relative rounded-2xl overflow-hidden shadow">
           <Image
-            src="/images/Velika-stavka-pexels-bram-van-egmond.jpeg"
+            src="/images/Off2work/Area-of-Work/wood-industry.jpg"
             alt="Apples in wooden box"
             layout="fill"
             objectFit="cover"
-            className="absolute inset-0"
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
           <div className="absolute inset-0 bg-black/20"></div>
         </div>
@@ -151,26 +153,28 @@ export default function IndustriesEnglishPage() {
           </div>
         </div>
 
-        <div className="w-full md:w-1/3 relative rounded-2xl overflow-hidden shadow">
+        <div className="w-full md:w-1/2 h-[300px] md:h-auto relative rounded-2xl overflow-hidden shadow">
           <Image
-            src="/images/Velika-stavka-pexels-rodolfo-quiros.jpeg"
-            alt="Apples in wooden box"
-            layout="fill"
-            objectFit="cover"
-            className="absolute inset-0"
+            src="/images/Off2work/Area-of-Work/construction-and-industry.jpg"
+            alt="construction-and-industry"
+            fill
+            className="object-cover"
+            priority
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
           <div className="absolute inset-0 bg-black/20"></div>
         </div>
       </div>
-      <div className="bg-[#063556] h-[180px]" />
-      <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row  gap-4 -mt-10 mb-30">
-        <div className="w-full md:w-1/3 relative rounded-2xl overflow-hidden shadow">
+      <div className="bg-[#3E3F49] h-[180px]" />
+      <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row flex-col-reverse gap-4 -mt-10 mb-8 md:mb-30">
+        <div className="w-full md:w-1/3 h-[300px] md:h-auto relative rounded-2xl overflow-hidden shadow">
           <Image
-            src="/images/Velika-stavka-pexels-danial-abdullah.jpeg"
-            alt="Apples in wooden box"
+            src="/images/Off2work/Area-of-Work/shipbuilding.jpeg"
+            alt="shipbuilding"
             layout="fill"
             objectFit="cover"
-            className="absolute inset-0"
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
           <div className="absolute inset-0 bg-black/20"></div>
         </div>
@@ -196,7 +200,7 @@ export default function IndustriesEnglishPage() {
           </div>
         </div>
       </div>
-      <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row bg-white gap-4 mt-30 -mb-10">
+      <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row bg-white gap-4 mt-8 md:mt-30 -mb-10">
         <div className="w-full md:w-1/2 p-8 bg-white flex flex-col justify-center rounded-2xl overflow-hidden shadow">
           <h2 className="text-3xl font-bold text-[#003459] mb-4">
             Tourism and Hospitality
@@ -219,26 +223,28 @@ export default function IndustriesEnglishPage() {
           </div>
         </div>
 
-        <div className="w-full md:w-1/3 relative rounded-2xl overflow-hidden shadow">
+        <div className="w-full md:w-1/3 h-[300px] md:h-auto relative rounded-2xl overflow-hidden shadow">
           <Image
-            src="/images/Velika-stavka-pexels-liliana-drew.jpeg"
-            alt="Apples in wooden box"
-            layout="fill"
-            objectFit="cover"
-            className="absolute inset-0"
+            src="/images/Off2work/Area-of-Work/tourism-and-hospitality.jpg"
+            alt="tourism-and-hospitality"
+            fill
+            className="object-cover"
+            priority
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
           <div className="absolute inset-0 bg-black/20"></div>
         </div>
       </div>
-      <div className="bg-[#063556] h-[180px]" />
-      <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row  gap-4 -mt-10 mb-30">
-        <div className="w-full md:w-1/3 relative rounded-2xl overflow-hidden shadow">
+      <div className="bg-[#3E3F49] h-[180px]" />
+      <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row flex-col-reverse gap-4 -mt-10 mb-8 md:mb-30">
+        <div className="w-full md:w-1/3 h-[300px] md:h-auto relative rounded-2xl overflow-hidden shadow">
           <Image
-            src="/images/Velika-stavka-pexels-tiger-lily.jpeg"
-            alt="Apples in wooden box"
-            layout="fill"
-            objectFit="cover"
-            className="absolute inset-0"
+            src="/images/Off2work/Area-of-Work/Production.jpg"
+            alt="Production"
+            fill
+            className="object-cover"
+            priority
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
           <div className="absolute inset-0 bg-black/20"></div>
         </div>
@@ -265,7 +271,7 @@ export default function IndustriesEnglishPage() {
           </div>
         </div>
       </div>
-      <div className="bg-[#063556] h-[100px] text-center text-white flex items-center justify-center">
+      <div className="bg-[#3E3F49] h-[100px] text-center text-white flex items-center justify-center">
         Just some of the companies that have entrusted us with their trust:
       </div>
       <ServicesSection />

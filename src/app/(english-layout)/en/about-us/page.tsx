@@ -1,52 +1,52 @@
 import ImageShowcase from "@/components/aboutus/ImageShowCase";
 import LogoGallery from "@/components/home-english/LogoGallary";
 import { ArrowRight, ChevronRight } from "lucide-react";
-import Image from "next/image";
+// import Image from "next/image";
 
-const team = [
-  {
-    avatar: "/images/up3.avif",
-    name: "Ivan Suhanek",
-    title: "Chief Executive Officer",
-  },
-  {
-    avatar: "/images/up6.avif",
-    name: "Ivan Semper",
-    title: "Manager",
-  },
-  {
-    avatar: "/images/up2.avif",
-    name: "Natasha Kaselj",
-    title: "Recruitment Specialist",
-  },
-  {
-    avatar: "/images/up1.avif",
-    name: "Cornelia Eljuga",
-    title: "Key Account Manager",
-  },
-  {
-    avatar: "/images/up4.avif",
-    name: "Daniel martin",
-    title: "Recruitment Agent",
-  },
-  {
-    avatar: "/images/up5.avif",
-    name: "Ramesh Godar",
-    title: "Recruitment Agent",
-  },
-];
+// const team = [
+//   {
+//     avatar: "/images/up3.avif",
+//     name: "Ivan Suhanek",
+//     title: "Chief Executive Officer",
+//   },
+//   {
+//     avatar: "/images/up6.avif",
+//     name: "Ivan Semper",
+//     title: "Manager",
+//   },
+//   {
+//     avatar: "/images/up2.avif",
+//     name: "Natasha Kaselj",
+//     title: "Recruitment Specialist",
+//   },
+//   {
+//     avatar: "/images/up1.avif",
+//     name: "Cornelia Eljuga",
+//     title: "Key Account Manager",
+//   },
+//   {
+//     avatar: "/images/up4.avif",
+//     name: "Daniel martin",
+//     title: "Recruitment Agent",
+//   },
+//   {
+//     avatar: "/images/up5.avif",
+//     name: "Ramesh Godar",
+//     title: "Recruitment Agent",
+//   },
+// ];
 
 export default function AboutUsPageEnglish() {
   return (
     <div className="min-h-screen pt-4">
       <div
         style={{
-          backgroundImage: "url('/images/contact-bg.png')",
+          backgroundImage: "url('/images/Off2work/1x/asset2.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
-        className="w-full flex items-center justify-center"
+        className="w-full h-[500px] flex items-center justify-center"
       >
         <div className="max-w-screen-md mx-auto min-h-[400px] space-y-4 text-center mt-8">
           <p className="text-4xl text-gray-800 font-bold my-4 ">About Us</p>
@@ -93,63 +93,72 @@ export default function AboutUsPageEnglish() {
         </div>
       </div>
       <LogoGallery />
-      <div className="bg-gray-50">
-        <div className="container mx-auto px-4 py-16">
+      <div className="relative min-h-[500px] overflow-hidden">
+        {/* Grass-like background with gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-green-50 via-emerald-100 to-teal-50"></div>
+
+        {/* Glassmorphism container */}
+        <div className="container mx-auto px-4 py-16 relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 uppercase mb-12">
             Mission & Vision
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 max-w-screen-xl mx-auto gap-4">
-            <div className="space-y-4  rounded-md p-4 bg-[#023a51]/20 hover:shadow-2xl shadow-gray-400 transition-transform duration-300 cursor-pointer">
-              <h2 className="text-[#3E4247] text-2xl font-bold">Our mission</h2>
-              <p className="text-lg font-normal">
+
+          <div className="grid grid-cols-1 md:grid-cols-2 max-w-screen-xl mx-auto gap-8">
+            {/* Mission Card */}
+            <div className="glassmorphism-card">
+              <h2 className="text-2xl font-bold text-gray-800">Our mission</h2>
+              <p className="text-gray-700">
                 Our mission is to deliver exceptional service and a seamless
                 business experience through quality solutions, a professional
                 approach, and competitive pricing.
               </p>
-              <span className="flex gap-4 text-lg font-medium">
-                <ChevronRight className="w-8 h-8 text-red-600" />
-                <p className="text-lg font-medium">
-                  We aim to boost productivity and competitiveness by
-                  identifying and attracting the best candidates who align with
-                  our clients&apos; needs.
-                </p>
-              </span>
-              <span className="flex gap-4 text-lg font-medium">
-                <ChevronRight className="w-8 h-8 text-red-600" />
-                <p className="text-lg font-medium">
-                  We strive to be recognized as a reliable partner, committed to
-                  not just meeting but exceeding your expectations.
-                </p>
-              </span>
+              <div className="space-y-4 mt-4">
+                <div className="flex gap-3 items-start">
+                  <ChevronRight className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
+                  <p className="text-gray-700">
+                    We aim to boost productivity and competitiveness by
+                    identifying and attracting the best candidates.
+                  </p>
+                </div>
+                <div className="flex gap-3 items-start">
+                  <ChevronRight className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
+                  <p className="text-gray-700">
+                    We strive to be recognized as a reliable partner committed
+                    to exceeding expectations.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="space-y-4  rounded-md p-4 bg-[#023a51]/20 hover:shadow-2xl shadow-gray-400 transition-transform duration-300 cursor-pointer">
-              <h2 className="text-[#3E4247] text-2xl font-bold">Our vision</h2>
-              <p className="text-lg font-normal">
+
+            {/* Vision Card */}
+            <div className="glassmorphism-card">
+              <h2 className="text-2xl font-bold text-gray-800">Our vision</h2>
+              <p className="text-gray-700">
                 Our vision is to become a leading agency in workforce solutions,
                 known for excellence and innovation.
               </p>
-              <span className="flex gap-4 text-lg font-medium">
-                <ChevronRight className="w-8 h-8 text-red-600" />
-                <p className="text-lg font-medium">
-                  We aim to build lasting relationships with clients, partners,
-                  employees, and stakeholders, fostering mutual growth and
-                  success.
-                </p>
-              </span>
-              <span className="flex gap-4 text-lg font-medium">
-                <ChevronRight className="w-8 h-8 text-red-600" />
-                <p className="text-lg font-medium">
-                  Our focus is on long-term collaboration, continuous
-                  improvement, and expanding our service offerings to meet
-                  evolving market demands.
-                </p>
-              </span>
+              <div className="space-y-4 mt-4">
+                <div className="flex gap-3 items-start">
+                  <ChevronRight className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
+                  <p className="text-gray-700">
+                    We aim to build lasting relationships fostering mutual
+                    growth and success.
+                  </p>
+                </div>
+                <div className="flex gap-3 items-start">
+                  <ChevronRight className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
+                  <p className="text-gray-700">
+                    Our focus is on long-term collaboration and continuous
+                    improvement.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="max-w-screen-xl mx-auto px-4 md:px-8 my-8">
+      {/* <div className="max-w-screen-xl mx-auto px-4 md:px-8 my-8">
         <div className="max-w-xl mx-auto sm:text-center">
           <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
             Meet our team
@@ -177,7 +186,7 @@ export default function AboutUsPageEnglish() {
             ))}
           </ul>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

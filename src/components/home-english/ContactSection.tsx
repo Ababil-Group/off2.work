@@ -16,7 +16,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="offices" className="bg-black bg-gradient-to-br from-[#063556] to-gray-900 ">
+    <section id="offices" className="bg-black bg-gradient-to-br from-[#063556] to-gray-900">
       <div
         style={{
           backgroundImage: "url('/images/download.svg')",
@@ -24,9 +24,9 @@ export default function ContactSection() {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
-        className=" min-h-screen flex justify-center items-center"
+        className=" h-auto flex justify-center items-center"
       >
-        <div className="max-w-7xl absolute mx-auto bg-[#3E4247] rounded-2xl  px-6 md:px-20 mb-12 py-16 grid md:grid-cols-2 gap-12">
+        <div className="max-w-7xl mx-auto bg-[#3E4247] rounded-2xl  px-6 md:px-20 mb-12 py-16 grid md:grid-cols-2 gap-12">
           {/* Left Side - Contact Information */}
           <div className="text-gray-200 space-y-8">
             <h2 className="text-4xl font-bold leading-tight uppercase">
@@ -43,7 +43,7 @@ export default function ContactSection() {
                   </span>
                   Romania Office:
                 </p>
-                <Link href={""} className="text-base text-gray-100">
+                <Link href={""} className="text-lg text-gray-200 font-medium">
                   HQ {">"} Municipiul Ploieşti, Strada MIHAI BRAVU, Nr. 239,
                   Bloc C4, Ap. 71, Judet Prahova
                 </Link>
@@ -53,7 +53,7 @@ export default function ContactSection() {
                   </span>
                   New Zealand:
                 </p>
-                <Link href={""} className="text-base text-gray-100">
+                <Link href={""} className="text-lg text-gray-200 font-medium">
                   Level 1/3 Johnsonville Road, Johnsonville, Wellington 6037
                 </Link>
 
@@ -63,7 +63,7 @@ export default function ContactSection() {
                   </span>
                   Australia:
                 </p>
-                <Link href={""} className="text-base text-gray-100">
+                <Link href={""} className="text-lg text-gray-200 font-medium">
                   Level 25, 108 St Georges Terrace, Perth WA 6000
                 </Link>
               </div>

@@ -146,21 +146,21 @@ export default function ReferencePageEnglish() {
     <div className=" min-h-screen pt-5">
       <div
         style={{
-          backgroundImage: "url('/images/contact-bg.png')",
+          backgroundImage: "url('/images/Off2work/1x/asset2.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
         className="h-[500px] w-full flex items-center justify-center"
       >
-        <div className="text-start max-w-screen-md h-[400px] mt-8 p-4">
+        <div className="text-start max-w-screen-md mx-auto h-[400px] mt-8 p-4">
           <p className="text-2xl  text-[#023a51] my-4">
             Client Success Stories
           </p>
-          <p className="text-5xl  text-[#023a51] font-bold my-4">
+          <p className="text-4xl md:text-5xl text-[#023a51] font-bold my-4">
             Just some of the companies that have trusted us.
           </p>
-          <p className="text-xl  text-foreground-muted">
+          <p className="text-xl text-foreground-muted">
             Partnering with Off2 Work offers a simple, fast, and efficient way
             to access quality staff, saving you time and resources while
             providing a diverse pool of skilled candidates.

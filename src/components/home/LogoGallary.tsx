@@ -24,7 +24,7 @@ const logos = [
 
 export default function LogoGallery() {
   return (
-    <section className="max-w-[1250px] mx-auto px-1 py-8 lg:py-16">
+    <section className="max-w-[1250px] mx-auto px-1 py-10 lg:py-16">
       {/* <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
           Naši pouzdani partneri

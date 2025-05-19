@@ -20,14 +20,14 @@ export default function ContactPageEnglish() {
     <div className=" min-h-screen pt-5">
       <div
         style={{
-          backgroundImage: "url('/images/contact-bg.png')",
+          backgroundImage: "url('/images/Off2work/1x/asset2.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
-        className="h-[400px] w-full flex items-center justify-center"
+        className="h-[500px] w-full flex items-center justify-center"
       >
-        <div className="text-start max-w-[500px] h-[400px] mt-8">
+        <div className="text-start max-w-screen-md mx-auto h-[400px] mt-8 p-4">
           <p className="text-4xl  text-[#023a51] my-4">Contact us</p>
           <p className="text-5xl  text-[#023a51] font-bold my-4">
             Let&apos;s Get to Know Each Other
@@ -42,9 +42,7 @@ export default function ContactPageEnglish() {
       <div className="bg-white rounded-xl py-20 px-12 space-y-3 max-w-[700px] mx-auto shadow-lg">
         <span className="text-2xl font-bold text-center">Get in Touch</span>
         <form className="space-y-6">
-
           <div className="grid md:grid-cols-2 gap-4">
-
             <div className="space-y-4">
               <Label htmlFor="fullName" className="text-grey-500">
                 Name and Surname *
