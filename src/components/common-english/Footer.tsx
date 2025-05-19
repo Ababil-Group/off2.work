@@ -42,25 +42,25 @@ const Footer = () => {
 
               <div className="flex flex-col space-y-4">
                 <Link
-                  href="/services"
+                  href="/en/services"
                   className="hover:border-b-2 hover:border-[#063556]"
                 >
                   Services
                 </Link>
                 <Link
-                  href="/industries"
+                  href="/en/industries"
                   className="hover:border-b-2 hover:border-[#063556]"
                 >
                   Industries We Serve
                 </Link>
                 <Link
-                  href="/reference"
+                  href="/en/reference"
                   className="hover:border-b-2 hover:border-[#063556]"
                 >
                   Client Success Stories
                 </Link>
                 <Link
-                  href="/about-us"
+                  href="/en/about-us"
                   className="hover:border-b-2 hover:border-[#063556]"
                 >
                   About Us
@@ -71,13 +71,13 @@ const Footer = () => {
               <h2 className="text-2xl font-semibold">Support</h2>
               <div className="flex flex-col space-y-4">
                 <Link
-                  href="/faq"
+                  href="/en/faq"
                   className="hover:border-b-2 hover:border-[#063556]"
                 >
                   FAQs
                 </Link>
                 <Link
-                  href="/edit"
+                  href="/en/contact"
                   className="hover:border-b-2 hover:border-[#063556]"
                 >
                   Contact Information
@@ -173,8 +173,11 @@ const Footer = () => {
               <AiFillTikTok className="w-8 h-8 p-1 bg-gray-600 text-white hover:bg-blue-900 rounded-md hover:text-white hover:translate-y-2 transition-transform duration-300 hover:shadow-2xl shadow-gray-400" />
             </Link>
           </div>
-          <Link href="#top" className="block text-[#063556] hover:underline flex items-center">
-            Back to top <ArrowUpToLine/>
+          <Link
+            href="#top"
+            className="block text-[#063556] hover:underline flex items-center"
+          >
+            Back to top <ArrowUpToLine />
           </Link>
         </div>
       </div>
