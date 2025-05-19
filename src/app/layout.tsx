@@ -13,10 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TH Consulting",
+  title: "OFF2WORK RECUITMENT",
   description: "",
   icons: {
-    icon: "/images/faviicon.png",
+    icon: "/images/off2worklogo.png",
   },
 };
 

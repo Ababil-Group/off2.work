@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "OFF2WORK RECUITMENT",
   description: "",
   icons: {
-    icon: "/images/faviicon.png",
+    icon: "/images/off2worklogo.png",
   },
 };
 
