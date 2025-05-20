@@ -66,7 +66,10 @@ export function Navbar() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-white">
         <div className="max-w-[1250px] mx-auto px-2">
           <div className="flex flex-col lg:flex-row lg:items-center">
-            <div className="flex items-center justify-between pr-8 py-4 lg:py-0">
+            <Link
+              href={"/en"}
+              className="flex items-center justify-between pr-8 py-4 lg:py-0"
+            >
               <Image
                 src="/images/off2worklogo.png"
                 alt=""
@@ -79,7 +82,7 @@ export function Navbar() {
               >
                 {isOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
-            </div>
+            </Link>
 
             <div
               className={cn(
