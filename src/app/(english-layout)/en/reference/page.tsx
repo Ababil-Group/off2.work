@@ -361,7 +361,8 @@ export default function ReferencePageEnglish() {
           {/* Industry Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {industries.map((industry) => (
-              <div
+              <Link
+                href={"/en/industries"}
                 key={industry.id}
                 onMouseEnter={() => setHoveredCard(industry.id)}
                 onMouseLeave={() => setHoveredCard(null)}
@@ -408,7 +409,7 @@ export default function ReferencePageEnglish() {
                     Learn more
                   </button>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
 
