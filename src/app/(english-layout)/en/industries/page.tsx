@@ -59,7 +59,7 @@ export default function IndustriesEnglishPage() {
           </p>
         </div>
       </div>
-      <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row bg-white gap-4 mt-2 md:mt-20 -mb-10">
+      <div id="service" className="max-w-[1000px] mx-auto flex flex-col md:flex-row bg-white gap-4 mt-2 md:mt-20 -mb-10">
         <div className="w-full md:w-1/2 p-8 bg-white flex flex-col justify-center rounded-2xl overflow-hidden shadow">
           <h2 className="text-3xl font-bold text-[#003459] mb-4">
             Agriculture.

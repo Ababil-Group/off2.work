@@ -6,6 +6,7 @@ import {
   Handshake,
   Users,
 } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const listData = [
@@ -161,7 +162,7 @@ export default function ServiceDetailsPageEnglish() {
         </div>
       </div>
 
-      <div className="bg-gray-200 py-10">
+      <div id="services-tailored" className="bg-gray-200 py-10">
         <div className="max-w-screen-lg mx-auto p-2">
           <div className="max-w-2xl mx-auto my-6">
             <h2 className="text-4xl font-bold text-gray-900 sm:text-5xl mb-6">
@@ -206,15 +207,19 @@ export default function ServiceDetailsPageEnglish() {
               Discover how we can help you build a skilled and reliable
               workforce.
             </p>
-            <button className="mt-8 px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-300 flex items-center mx-auto">
+            <Link
+              href={"/en/industries#service"}
+              className="mt-8 px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-300 flex items-center mx-auto"
+            >
               See more <ArrowRightIcon className="ml-2" />
-            </button>
+            </Link>
           </div>
 
           {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div
+              <Link
+                href={"#services-tailored"}
                 key={index}
                 className={`${service.gradient} rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 group overflow-hidden relative`}
               >
@@ -234,7 +239,7 @@ export default function ServiceDetailsPageEnglish() {
                     <ArrowRightIcon className="ml-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform -translate-x-1 group-hover:translate-x-0" />
                   </button>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
 

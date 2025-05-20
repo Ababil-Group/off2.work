@@ -6,6 +6,7 @@ import {
   Handshake,
   Users,
 } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const listData = [
@@ -111,8 +112,9 @@ export default function ServiceDetailsPageEnglish() {
       </div>
       <div className="w-full bg-white max-w-screen-lg mx-auto my-6 ">
         <h2 className="text-4xl font-bold text-gray-900 sm:text-5xl mb-6 p-4">
-          When is <span className="text-blue-600">Hiring</span> Talent-Trained
-          Workers the Best Choice?
+          When is{" "}
+          <span className="text-blue-600"> Hiring Talent-Trained Workers </span>{" "}
+          the Best Choice?
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#414047] p-8 rounded-2xl">
           <div className="space-y-3">
@@ -159,11 +161,12 @@ export default function ServiceDetailsPageEnglish() {
         </div>
       </div>
 
-      <div className="bg-gray-200 py-10">
+      <div id="service-tailored" className="bg-gray-200 py-10">
         <div className="max-w-screen-lg mx-auto p-2">
           <div className="max-w-2xl mx-auto my-6">
             <h2 className="text-4xl font-bold text-gray-900 sm:text-5xl mb-6">
-              Choose A Service Tailored To Your Business.
+              Choose A <span className="text-blue-600"> Service Tailored </span>
+              To Your Business.
             </h2>
             <p className="text-lg text-center">
               Discover the advantages of our specialized services designed to
@@ -204,15 +207,21 @@ export default function ServiceDetailsPageEnglish() {
               Discover how we can help you build a skilled and reliable
               workforce.
             </p>
-            <button className="mt-8 px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-300 flex items-center mx-auto">
-              See more <ArrowRightIcon className="ml-2" />
-            </button>
+            <Link
+              href={"/en/industries#service"}
+              className="mt-8 px-8 py-3 inline-block bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-300  mx-auto"
+            >
+              <span className="flex items-center">
+                See more <ArrowRightIcon className="ml-2" />
+              </span>
+            </Link>
           </div>
 
           {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div
+              <Link
+                href={"#service-tailored"}
                 key={index}
                 className={`${service.gradient} rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 group overflow-hidden relative`}
               >
@@ -232,7 +241,7 @@ export default function ServiceDetailsPageEnglish() {
                     <ArrowRightIcon className="ml-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform -translate-x-1 group-hover:translate-x-0" />
                   </button>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
 

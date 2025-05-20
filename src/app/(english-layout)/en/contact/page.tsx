@@ -113,6 +113,9 @@ export default function ContactPageEnglish() {
           </Button>
         </form>
       </div>
+      <div className="max-w-screen-xl mx-auto px-2 mt-8">
+        <h2 className="font-bold text-3xl md:text-5xl max-w-sm border-b-4 pb-2 border-[#404049]">Look For The <span className="text-blue-600">Office Near</span> You</h2>
+      </div>
       <ContactInfo />
       <FAQSection />
     </div>
