@@ -39,8 +39,12 @@ export default function ContactPageEnglish() {
         </div>
       </div>
 
-      <div className="bg-white rounded-xl py-20 px-12 space-y-3 max-w-[700px] mx-auto shadow-lg">
-        <span className="text-2xl font-bold text-center">Get in Touch</span>
+      <div className="bg-white rounded-xl py-10 px-12 space-y-3 max-w-[700px] mx-auto shadow-lg">
+        <div className="pb-4">
+          <h2 className="text-4xl font-bold text-center text-[#3D4147]">
+            Get in Touch
+          </h2>
+        </div>
         <form className="space-y-6">
           <div className="grid md:grid-cols-2 gap-4">
             <div className="space-y-4">
@@ -49,7 +53,7 @@ export default function ContactPageEnglish() {
               </Label>
               <Input id="fullName" placeholder="Name and Surname *" required />
             </div>
-            <div className="space-y-6">
+            <div className="space-y-4">
               <Label htmlFor="mobile" className="text-grey-500">
                 Mobile Phone Number *
               </Label>
@@ -106,7 +110,7 @@ export default function ContactPageEnglish() {
 
           <Button
             type="submit"
-            className="w-full bg-[#053b60] hover:bg-red-500 rounded-3xl"
+            className="w-full bg-[#3D4147] cursor-pointer hover:bg-blue-700 transition-colors duration-300 rounded-3xl"
             size="lg"
           >
             <Send className="mr-2 h-4 w-4" /> Send Inquiry
@@ -114,7 +118,9 @@ export default function ContactPageEnglish() {
         </form>
       </div>
       <div className="max-w-screen-xl mx-auto px-2 mt-8">
-        <h2 className="font-bold text-3xl md:text-5xl max-w-sm border-b-4 pb-2 border-[#404049]">Look For The <span className="text-blue-600">Office Near</span> You</h2>
+        <h2 className="font-bold text-3xl md:text-5xl max-w-sm border-b-4 pb-2 border-[#404049]">
+          Look For The <span className="text-blue-600">Office Near</span> You
+        </h2>
       </div>
       <ContactInfo />
       <FAQSection />

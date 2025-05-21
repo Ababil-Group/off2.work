@@ -42,7 +42,7 @@ const Footer = () => {
 
               <div className="flex flex-col space-y-4">
                 <Link
-                  href="/en/services"
+                  href="/en/services/hires"
                   className="hover:border-b-2 hover:border-[#063556]"
                 >
                   Services
@@ -71,7 +71,7 @@ const Footer = () => {
               <h2 className="text-2xl font-semibold">Support</h2>
               <div className="flex flex-col space-y-4">
                 <Link
-                  href="/en/faq"
+                  href="/en/contact#faq"
                   className="hover:border-b-2 hover:border-[#063556]"
                 >
                   FAQs

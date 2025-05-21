@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState } from "react";
+import { FaMinus, FaPlus } from "react-icons/fa6";
 
 const FAQSection = () => {
   const [openSection, setOpenSection] = useState(null);
@@ -90,7 +91,7 @@ const FAQSection = () => {
 
   return (
     <div id="faq" className="max-w-4xl mx-auto my-10 px-4">
-      <h2 className="text-2xl font-bold text-center mb-6 text-[#023a51]">
+      <h2 className="text-2xl font-bold text-center mb-6 text-[#3D4147]">
         Most Common Questions
       </h2>
 
@@ -101,8 +102,8 @@ const FAQSection = () => {
               className="flex items-center cursor-pointer group"
               onClick={() => toggleSection(index)}
             >
-              <span className="mr-4 text-white text-xl w-6 text-center border rounded bg-[#023a51] hover:bg-red-500">
-                {openSection === index ? "−" : "+"}
+              <span className="mr-4 text-white text-xl w-6 text-center border rounded bg-[#3D4147] hover:bg-red-500">
+                {openSection === index ? <FaMinus className="p-1"/> : <FaPlus className="p-1"/>}
               </span>
               <h3
                 className={`text-lg font-medium ${
